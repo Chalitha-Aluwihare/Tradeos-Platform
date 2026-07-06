@@ -2,7 +2,7 @@
 
 A modern, full-stack web platform built using a monorepo architecture. The project features a robust NestJS backend API coupled with a dynamic web frontend application.
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, Vite, TailwindCSS
 - **Backend:** NestJS (Node.js framework)
@@ -10,7 +10,7 @@ A modern, full-stack web platform built using a monorepo architecture. The proje
 - **Package Manager:** pnpm (Workspace monorepo architecture)
 - **Language:** TypeScript
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 tradeos-platform/
