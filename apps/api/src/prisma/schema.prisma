@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Look! No url property here anymore!
+}
+
+model User {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  password      String
+  createdAt     DateTime @default(now())
+}
+
+model Trade {
+  id            String   @id @default(uuid())
+  instrument    String
+  entryPrice    Float
+  exitPrice     Float?
+  lotSize       Float
+  createdAt     DateTime @default(now())
+}
